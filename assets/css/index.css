@@ -76,7 +76,7 @@ body {
 #shape {
     stroke-width: 6px;
     fill: transparent;
-    stroke: #25283D;
+    stroke: #b4b6c3;
     stroke-dasharray: 85 400;
     stroke-dashoffset: -200;
     transition: 1s all ease;
@@ -126,7 +126,7 @@ header .background {
 
 header .background img {
     width: 100%;
-    filter: grayscale(1) blur(2px);
+    filter: grayscale(0.9) blur(2px);
 }
 
 header .background .blacklayout {
@@ -209,6 +209,7 @@ header nav .pages .svg-wrapper a {
     color: #fff;
     font-size: 18px;
     text-transform: uppercase;
+    font-style: italic;
     font-family: 'Barlow', sans-serif;
     font-weight: 700;
     text-shadow: -1px 1px 0px rgba(170, 170, 170, 0.66);
@@ -296,6 +297,293 @@ header .hero .btn {
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
     animation: apparition-right ease 0.5s;
+}
+
+
+/*===============================================================*/
+/* Dernier tournois */
+/*===============================================================*/
+
+.lasttournament {
+    top: 73%;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.lasttournament .box {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+}
+
+.lasttournament .box img {
+    width: 100%;
+}
+
+.lasttournament .content {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+}
+
+.lasttournament .content .text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lasttournament .content .text p {
+    color: var(--primary-color);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+}
+
+.lasttournament .content .text h1 {
+    padding: 10px;
+    color: #fff;
+    font-family: 'berlin_sans_fb';
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.lasttournament .content .text .separator {
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 2px;
+    margin-top: 10px;
+}
+
+.lasttournament .content .text span {
+    color: #fff;
+    margin-top: 20px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+}
+
+.lasttournament .content .result {
+    margin-top: 80px;
+    display: flex;
+    width: 55%;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.lasttournament .content .result .left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    justify-content: left;
+    flex-direction: column;
+}
+
+
+.lasttournament .content .result .left .sc {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+.lasttournament .content .result .left .pp {
+    position: absolute;
+    display: flex;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+}
+
+.lasttournament .content .result .left .pp img {
+    width: 85%;
+}
+
+.lasttournament .content .result .left .score {
+    margin-left: 20px;
+    width: 240px;
+    height: 80px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+.lasttournament .content .result .left .score h1 {
+    color: #25283D;
+    font-family: 'berlin_sans_fb';
+    font-size: 60px;
+    padding-right: 20px;
+    margin-top: -5px;
+}
+
+
+.lasttournament .content .result .left .desc {
+    padding: 30px;
+    margin-left: 10px;
+    color: #fff;
+    width: 50%;
+    text-align: right;
+}
+
+.lasttournament .content .result .left .desc h1 {
+    font-family: 'berlin_sans_fb';
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+    font-size: 30px;
+    width: 200px;
+}
+
+
+.lasttournament .content .result .left .desc h2 {
+    color: var(--primary-color);
+    font-size: 25px;
+    font-family: 'berlin_sans_fb';
+    font-weight: 400 !important;
+    letter-spacing: 2px;
+}
+
+
+
+/* VS */
+
+
+.lasttournament .content .result .vs {
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    top: 20px;
+}
+
+
+/* Right */
+
+.lasttournament .content .result .right {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    justify-content: right;
+    flex-direction: column;
+}
+
+
+.lasttournament .content .result .right .sc {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.lasttournament .content .result .right .pp {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 130px;
+    right: 0px;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+}
+
+.lasttournament .content .result .right .pp img {
+    width: 85%;
+}
+
+.lasttournament .content .result .right .score {
+    margin-right: 20px;
+    width: 240px;
+    height: 80px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.lasttournament .content .result .right .score h1 {
+    color: #25283D;
+    font-family: 'berlin_sans_fb';
+    font-size: 60px;
+    padding-left: 20px;
+    margin-top: -5px;
+}
+
+
+
+
+.lasttournament .content .result .right .desc {
+    padding: 30px;
+    margin-left: 10px;
+    color: #fff;
+    width: 50%;
+    text-align: left;
+}
+
+.lasttournament .content .result .right .desc h1 {
+    font-family: 'berlin_sans_fb';
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+    font-size: 30px;
+    width: 200px;
+}
+
+
+.lasttournament .content .result .right .desc h2 {
+    color: var(--primary-color);
+    font-size: 25px;
+    font-family: 'berlin_sans_fb';
+    font-weight: 400 !important;
+    letter-spacing: 2px;
+}
+
+
+.lasttournament .content .description {
+    margin-top: 20px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lasttournament .content .description p {
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400 !important;
+    letter-spacing: 2px;
+}
+
+.lasttournament .content .description a {
+    margin-top: 30px;
+    padding: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: #25283D;
+    font-weight: 600 !important;
+    font-family: 'Barlow', sans-serif;
 }
 
 
