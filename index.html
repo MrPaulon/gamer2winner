@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer2Winner</title>
+    <link rel="icon" href="assets/img/logo_couleur.png">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="background">
+            <div class="blacklayout"></div>
+            <img src="assets/img/bg.gif" alt="">
+        </div>
+        <div class="content">
+        
+            
+            <nav>
+                <div class="blur"></div>
+                <div class="buttons">
+                    <div class="logo">
+                        <img src="assets/img/logo_couleur.png" alt="">
+                    </div>
+
+
+                    <div class="pages">
+                        <div class="svg-wrapper">
+                            <svg height="40" width="150" style="border-radius: 10px;" xmlns="http://www.w3.org/2000/svg">
+                              <rect id="shape" class="active" height="40" width="150" rx="10" ry="10" />
+                              <div id="text">
+                                <a href=""><span class="spot"></span>Accueil</a>
+                              </div>
+                            </svg>
+                        </div>
+                        <div class="svg-wrapper">
+                            <svg height="40" width="150" style="border-radius: 10px;" xmlns="http://www.w3.org/2000/svg">
+                              <rect id="shape" height="40" width="150" rx="10" ry="10" />
+                              <div id="text">
+                                <a href=""><span class="spot"></span>Tournois</a>
+                              </div>
+                            </svg>
+                        </div>
+                        <div class="svg-wrapper">
+                            <svg height="40" width="150" style="border-radius: 10px;" xmlns="http://www.w3.org/2000/svg">
+                              <rect id="shape" height="40" width="150" rx="10" ry="10" />
+                              <div id="text">
+                                <a href=""><span class="spot"></span>Actualités</a>
+                              </div>
+                            </svg>
+                        </div>
+                        <div class="svg-wrapper">
+                            <svg height="40" width="150" style="border-radius: 10px;" xmlns="http://www.w3.org/2000/svg">
+                              <rect id="shape" height="40" width="150" rx="10" ry="10" />
+                              <div id="text">
+                                <a href=""><span class="spot"></span>Contact</a>
+                              </div>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="navigation">
+                        <a href="#"><i class='bx bx-search'></i></a>
+
+                        <div class="separator"></div>
+
+                        <a href="#" class="button-login"><i style="padding-right: 5px;" class='bx bx-log-in-circle'></i> Connexion</a>
+
+                        <a href="#"><i class='bx bx-menu-alt-left' style="font-size: 40px !important;"></i></a>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="hero">
+                <div class="text">
+                    <h1 id="text1"></h1>
+                    <h1 id="text2"></h1>
+                    <svg id="filters">
+                        <defs>
+                            <filter id="threshold">
+                                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                                                                        0 1 0 0 0
+                                                                                        0 0 1 0 0
+                                                                                        0 0 0 255 -140"/>
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+
+                <a class="btn" href="#">
+                    <i class='bx bxs-crown' style="margin-right: 10px;"></i> Démarrer
+                </a>
+            </div>
+
+
+            <img class="box" src="assets/img/box.png" alt="">
+        </div>
+    </header>
+</body>
+<script src="assets/js/animations.js"></script>
+</html>
