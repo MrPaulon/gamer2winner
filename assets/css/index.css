@@ -611,7 +611,7 @@ header .hero .btn {
 }
 
 .apropos .content {
-    margin-top: 150px;
+    margin-top: 130px;
     position: relative;
     z-index: 2;
     height: 700px;
@@ -628,7 +628,7 @@ header .hero .btn {
 }
 
 .apropos .content .elem .left {
-    width: 50%;
+    width: 60%;
     height: 100%;
     text-align: left;
 }
@@ -657,6 +657,7 @@ header .hero .btn {
 .apropos .content .elem .left p {
     margin-top: 30px;
     margin-left: 10px;
+    width: 90%;
     color: #b4b6c3;
 }
 
@@ -718,7 +719,7 @@ header .hero .btn {
 
 
 .apropos .content .elem .right {
-    width: 50%;
+    width: 40%;
     height: 80%;
     display: flex;
     justify-content: center;
