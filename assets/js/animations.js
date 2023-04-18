@@ -14,7 +14,7 @@ const texts = [
 var compteur = 0;
 
 const morphTime = 1.5;
-const cooldownTime = 1.25;
+const cooldownTime = 0.25;
 
 let textIndex = texts.length - 1;
 let time = new Date();
@@ -62,9 +62,8 @@ function doCooldown() {
 
 function animate() {
 
-    if (compteur<=830) {
+    if (compteur<=5) {
         requestAnimationFrame(animate);
-        compteur++;
     } else {
         return
     }
@@ -78,6 +77,7 @@ function animate() {
 
     if (cooldown <= 0) {
         if (shouldIncrementIndex) {
+            compteur++;
             textIndex++;
         }
 
