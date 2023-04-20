@@ -2,6 +2,8 @@ var whatBgIsActive = 1;
 var navIsActive = true;
 var lastposition = 0;
 var canChangeNav = true;
+var scrollActive = false;
+
 
 function canChange() {
     setTimeout(() => {
@@ -13,6 +15,29 @@ document.addEventListener("scroll", (event) => {
     scrollpos = window.scrollY;
 
     //console.log(scrollpos);
+
+
+    // Button to Top
+
+    if (scrollpos > 500 && !scrollActive) {
+        document.getElementById('retrunTop').style.display = "block";
+        document.getElementById('retrunTop').style.animation="btn-apparition-top ease 0.5s";
+        setTimeout(() => {
+            document.getElementById('retrunTop').style.display = "block";
+        }, "10");
+        setTimeout(() => {
+            scrollActive = true;
+        }, "490");
+    } else {
+        if (scrollpos < 500 && scrollActive) {
+            document.getElementById('retrunTop').style.animation="btn-disparition-top ease 0.5s";
+            setTimeout(() => {
+                document.getElementById("retrunTop").style.display = "none";
+                scrollActive = false;
+            }, "490");
+        }
+    }
+
 
     // Animation Monitor
 
