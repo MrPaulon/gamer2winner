@@ -1167,6 +1167,164 @@ header .hero .btn {
 
 
 /*===============================================================*/
+/* Footer */
+/*===============================================================*/
+
+.footer {
+    height: 500px;
+    width: 100%;
+    background-color: #050506;
+    position: relative;
+}
+
+.footer .bg {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    height: 90%;
+}
+
+.footer .content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer .content .left {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 125px;
+}
+
+
+.footer .content .left h2 {
+    color: #fff;
+    font-family: 'berlin_sans_fb';
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+.footer .content .left .list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+.footer .content .left .list a {
+    margin: 8px;
+    padding: 15px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: #232533;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer .content .left .list a .bx {
+    font-size: 25px !important;
+    padding-right: 5px;
+}
+
+
+.footer .content .center {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.footer .content .center img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.footer .content .center .list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer .content .center .list a {
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer .content .center .list a .bx {
+    font-size: 16px !important;
+    padding-left: 5px;
+}
+
+.footer .content .right {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 125px;
+}
+
+
+.footer .content .right h2 {
+    color: #fff;
+    font-family: 'berlin_sans_fb';
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.footer .content .right .list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+.footer .content .right .list p {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.footer .content .right .list p span {
+    text-transform: lowercase;
+    font-size: 15px;
+    color: var(--primary-color);
+}
+
+
+
+.footer .content .right .list .rights {
+    margin-top: 80px;
+    font-size: 15px;
+}
+/*===============================================================*/
 /* Animations */
 /*===============================================================*/
 
