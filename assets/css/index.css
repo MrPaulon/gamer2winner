@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lexend', 'sans-sherif';
-    cursor: none;
+    /*cursor: none;*/
 }
 
 :root {
@@ -162,11 +162,12 @@ header .background {
     position: fixed;
     z-index: 1;
     width: 100%;
-    height: 90%;
+    height: 100%;
 }
 
 header .background img {
-    width: 100%;
+    width: 120%;
+    height: 100%;
     filter: grayscale(0.9) blur(2px);
 }
 
@@ -638,7 +639,7 @@ header .hero .btn {
 
 .apropos {
     width: 100%;
-    height: 1600px;
+    height: auto;
     overflow: hidden;
     position: relative;
     z-index: 2;
@@ -949,6 +950,79 @@ header .hero .btn {
 }
 
 
+
+.apropos .content .basdepage {
+    width: 100%;
+    height: 150px;
+}
+
+/*===============================================================*/
+/* Rejoindre */
+/*===============================================================*/
+
+.rejoindre {
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rejoindre .text {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.rejoindre .text h1 {
+    color: #fff;
+    font-family: 'berlin_sans_fb';
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+.rejoindre .text h1 span {
+    font-family: 'berlin_sans_fb';
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.rejoindre .text p {
+    padding-top: 10px;
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+}
+
+
+.rejoindre .text a {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: #25283D;
+    font-size: 20px;
+    border-radius: 15px;
+    width: auto;
+}
+
+.rejoindre .text a .bx {
+    font-size: 30px !important;
+}
 
 /*===============================================================*/
 /* Animations */
