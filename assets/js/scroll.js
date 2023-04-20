@@ -12,6 +12,26 @@ function canChange() {
 document.addEventListener("scroll", (event) => {
     scrollpos = window.scrollY;
 
+    //console.log(scrollpos);
+
+    // Animation Monitor
+
+
+    var monitorMargin = document.getElementById("monitor").offsetTop;
+    var px = scrollpos/2000;
+    
+    if (scrollpos > 3450) {
+        if (lastposition < scrollpos && monitorMargin < 500) {
+            var newTop = monitorMargin + px;
+            document.getElementById("monitor").style.top = ""+newTop+"px";
+        } else {
+            if (monitorMargin > 340) {
+                var newTop = monitorMargin - px;
+                document.getElementById("monitor").style.top = ""+newTop+"px";
+            }
+        }
+    }
+
 
     // Aparition menu top
 
