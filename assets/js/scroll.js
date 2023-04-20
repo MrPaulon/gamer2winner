@@ -4,6 +4,8 @@ document.addEventListener("scroll", (event) => {
     scrollpos = window.scrollY;
 
 
+    // Changement de Bg
+     
     if (scrollpos > 1250 && whatBgIsActive!= 2) {
         document.getElementById("backgroundimg").src = "assets/img/rainbow62.gif";
         document.getElementById("backgroundimg").style.filter = "grayscale(0.4) blur(2px)"
@@ -16,5 +18,5 @@ document.addEventListener("scroll", (event) => {
         }
     }
 
-    console.log(scrollpos)
+    
 });
