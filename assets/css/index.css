@@ -155,7 +155,8 @@ header {
     width: 100%;
     height: 1200px;
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    top: 0;
 }
 
 header .background {
@@ -200,17 +201,19 @@ header .box {
 /*===============================================================*/
 
 
-header nav {
+ nav {
     position: relative;
+    z-index: 9;
     top: 0px;
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(180deg, #24242485, #00000000);
 }
 
-header nav .blur {
+ nav .blur {
     position: absolute;
     top: 0;
     width: 100%;
@@ -219,26 +222,29 @@ header nav .blur {
     filter: blur(4px);
 }
 
-header nav .buttons {
-    position: relative;
+ nav .buttons {
+    position: fixed;
+    z-index: 9;
     width: 80%;
-    height: 80%;
+    height: 80px;
     display: inline-flex;
     align-items: center;
+    border-radius: 20px;
     animation: apparition-top ease 1s;
+    background-color: #24242485;
 }
 
-header nav .buttons .logo {
-    height: 100%;
+ nav .buttons .logo {
+    height: 80px;
     width: 80px;
     padding-right: 20px;
 }
 
-header nav .buttons .logo img {
+ nav .buttons .logo img {
     height: 100%;
 }
 
-header nav .pages {
+ nav .pages {
     padding: 20px;
     height: 100%;
     width: 100px;
@@ -246,7 +252,7 @@ header nav .pages {
     align-items: center;
 }
 
-header nav .pages .svg-wrapper a {
+ nav .pages .svg-wrapper a {
     padding: 15px;
     color: #fff;
     font-size: 18px;
@@ -257,11 +263,11 @@ header nav .pages .svg-wrapper a {
     text-shadow: -1px 1px 0px rgba(170, 170, 170, 0.66);
 }
 
-header nav .pages .active {
+ nav .pages .active {
     color: var(--primary-color);
 }
 
-header nav .navigation {
+ nav .navigation {
     position: absolute;
     right: 0;
     display: flex;
@@ -270,7 +276,7 @@ header nav .navigation {
     height: 100px;
 }
 
-header nav .navigation .separator {
+ nav .navigation .separator {
     height: 30%;
     margin: 20px;
     width: 2px;
@@ -278,11 +284,11 @@ header nav .navigation .separator {
 }
 
 
-header nav .navigation a .bx {
+ nav .navigation a .bx {
     font-size: 30px !important;
 }
 
-header nav .navigation .button-login {
+ nav .navigation .button-login {
     margin-left: 5px;
     margin-right: 15px;
     padding: 13px;
@@ -305,7 +311,7 @@ header .hero {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 220px;
 }
 
 header .hero .text {
@@ -1044,6 +1050,15 @@ header .hero .btn {
     }
     100% {
         margin-top: 0px;
+    }
+}
+
+@keyframes disparition-top {
+    0% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -100px;
     }
 }
 
