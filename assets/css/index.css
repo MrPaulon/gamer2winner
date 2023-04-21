@@ -302,18 +302,26 @@ header .box {
 
  nav .navigation a .bx {
     font-size: 30px !important;
+    padding: 13px;
 }
 
  nav .navigation .button-login {
     margin-left: 5px;
     margin-right: 15px;
-    padding: 13px;
     background-color: var(--dark-bg);
     display: flex;
     align-items: center;
     border-radius: 20px;
+    padding-right: 10px;
 }
 
+nav .navigation .button-login .pp {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding-right: 6px;
+    padding: 8px;
+}
 
 /*===============================================================*/
 /* Hero */
