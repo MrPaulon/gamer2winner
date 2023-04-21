@@ -157,7 +157,7 @@ body {
     width: auto;
     border-radius: 10px;
     color: #25283D;
-    margin-top: 30px;
+    margin-top: 20px;
     text-transform: uppercase;
     font-family: 'Barlow', sans-serif;
     font-weight: 600 !important;
@@ -175,4 +175,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.content .loginsec .card form a {
+    text-align: center;
+    width: 100%;
+    margin-top: 14px;
+}
+
+
+.content .loginsec .card form a span {
+    color: var(--primary-color);
 }

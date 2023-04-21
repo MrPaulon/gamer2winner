@@ -54,7 +54,7 @@ body {
 .content .loginsec .cardbehind {
     position: absolute;
     z-index: 1;
-    height: 450px;
+    height: 460px;
     width: 450px;
     background-color: var(--primary-color);
     opacity: 0.6;
@@ -73,7 +73,7 @@ body {
 .content .loginsec .card {
     position: absolute;
     z-index: 2;
-    height: 450px;
+    height: 460px;
     width: 450px;
     background-color: #25283D;
     border-radius: 40px;
@@ -157,7 +157,7 @@ body {
     width: auto;
     border-radius: 10px;
     color: #25283D;
-    margin-top: 30px;
+    margin-top: 20px;
     text-transform: uppercase;
     font-family: 'Barlow', sans-serif;
     font-weight: 600 !important;
@@ -175,4 +175,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.content .loginsec .card form a {
+    text-align: center;
+    width: 100%;
+    margin-top: 14px;
+}
+
+
+.content .loginsec .card form a span {
+    color: var(--primary-color);
 }
