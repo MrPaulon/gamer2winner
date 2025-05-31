@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@font-face {
+  font-family: berlin_sans_fb;
+  src: url('../fonts/BerlinSansSB.ttf');
+}
+
+@theme static {
+  --font-sans: 'Public Sans', sans-serif;
+
+  --breakpoint-3xl: 1920px;
+
+  --color-green-50: #eafff4;
+  --color-green-100: #c7ffe6;
+  --color-green-200: #95ffcf;
+  --color-green-300: #61ffb7;
+  --color-green-400: #45f882;
+  --color-green-500: #34d36b;
+  --color-green-600: #2ba759;
+  --color-green-700: #238346;
+  --color-green-800: #1d6638;
+  --color-green-900: #184f2d;
+  --color-green-950: #0c2a1a;
+}
